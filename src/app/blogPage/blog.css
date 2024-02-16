@@ -1,0 +1,52 @@
+h1{
+    font-size: 70px;
+    font-family: 'Cormorant', serif;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+    padding: 20px;
+    font-weight: bolder;
+}
+h2{
+    font-size: 70px;
+    font-family: 'Cormorant', serif;
+    font-family: 'Crimson Text', serif;
+    color: #fff;
+    padding: 10px;
+}
+h5{
+    font-size: 16px !important;
+    font-family: 'Cormorant', serif;
+    font-family: 'Crimson Text', serif;
+    color: #fff;
+    padding: 10px;
+}
+.blogsLink Link{
+    text-decoration: none !important; 
+    font-family: 'Cormorant', serif;
+    font-family: 'Crimson Text', serif;
+    color: #000 !important;
+}
+.blogsLink:hover{
+    text-decoration: none !important; 
+    color: #000 !important;
+    margin-left: 5px;
+}
+
+
+
+.Blogs {
+    width: 100%;
+    overflow: hidden;
+}
+
+.Blogs img {
+    filter: grayscale(100%);
+    object-fit: cover;
+    transition: all 3s;
+}
+
+.Blogs:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.2);
+}
