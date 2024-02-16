@@ -3,7 +3,7 @@ import React from 'react'
 export default function About1(props) {
   return (
     <div>
-
+     
       {
         props.abuotcont ?
           <div className='about1 mt-5 '>
