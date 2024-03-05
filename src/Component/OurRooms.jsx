@@ -14,9 +14,6 @@ export default function OurRooms() {
             </div>
 
 
-
-
-
             {/* <div class="parallax"></div>
 
             <div style={{height:"600px", fontSize:"36px"}}>

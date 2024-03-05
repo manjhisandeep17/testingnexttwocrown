@@ -19,7 +19,7 @@ export default function MonageaTrois() {
 
                         </div>
                     </div>
-                    <div className='col-md-5'>
+                    <div className='col-md-5 monagetower'>
                         <img src="tower.jpg" height="100%" width="100%" />
                     </div>
 

@@ -1,4 +1,27 @@
-h1{
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+.testclass {
+    font-family: 'Cormorant', serif;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px;
+}
+.testclass span{
+    margin: 10px;
+    font-family: "Libre Baskerville", serif ;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* h1 {
     font-size: 70px;
     font-family: 'Cormorant', serif;
     font-family: 'Crimson Text', serif;
@@ -6,33 +29,47 @@ h1{
     color: #fff;
     padding: 20px;
     font-weight: bolder;
-}
-h2{
+} */
+
+h2 {
     font-size: 70px;
     font-family: 'Cormorant', serif;
     font-family: 'Crimson Text', serif;
     color: #fff;
     padding: 10px;
 }
-h5{
+
+h5 {
     font-size: 16px !important;
     font-family: 'Cormorant', serif;
     font-family: 'Crimson Text', serif;
     color: #fff;
     padding: 10px;
 }
-.blogsLink Link{
-    text-decoration: none !important; 
-    font-family: 'Cormorant', serif;
-    font-family: 'Crimson Text', serif;
+
+.blogsLink {
+    text-decoration: none !important;
+    /* font-family: 'Cormorant', serif;
+    font-family: 'Crimson Text', serif; */
+    font-family: "Libre Baskerville", serif !important;
+    /* font-weight: 400 !important; */
+    font-style: italic !important;
     color: #000 !important;
 }
-.blogsLink:hover{
-    text-decoration: none !important; 
+
+.blogsLink:hover {
+    text-decoration: none !important;
     color: #000 !important;
     margin-left: 5px;
 }
 
+.blogbodycoll {
+    background-color: #fff1e5 !important;
+}
+
+.blogbodycol {
+    background-color: #fff3e9 !important;
+}
 
 
 .Blogs {
@@ -50,3 +87,17 @@ h5{
     filter: grayscale(0%);
     transform: scale(1.2);
 }
+.imgblog{
+    overflow: hidden;
+}
+
+
+.blogpara{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5rem !important;
+}
+
+

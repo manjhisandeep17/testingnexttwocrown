@@ -5,6 +5,8 @@ import Main from "@/Component/Main";
 import Banner from "../../public/bannernew.png"
 import HotelCategory from '@/Component/HotelCategory'
 import HotelCollection from '@/Component/HotelCollection'
+import HyperLinks from '@/Component/HyperLinks'
+import MovingWall from '@/Component/MovingWall'
 import Luxurious from '@/Component/Luxurious'
 import Discover from '@/Component/Discover'
 import DiscoverBack from '@/Component/DiscoverBack'
@@ -39,10 +41,12 @@ export default function Home(props) {
       Hotel3="Archer Hotel" cateimg3={Hotel3img} Hotel4="Caravalle Hotel" cateimg4={Hotel4img} locationimg1={location1img} locationimg3={location3img}  Mirinda="Miranda has everything for your  trip & every single things  Moriond." 
       mrirnda={true}  />
       {/* <HotelCollection/> */}
-      <Luxurious/>
+      <HyperLinks hyperupper={true} ></HyperLinks>
+      <MovingWall></MovingWall>
       <Discover Discoverhead="Discover Our Underground..." />
-      <Situated situated=" Situated In Prime Position At The Foot Of The Slopes Of Courchevel Moriond." />
       <About1 abuotcont= {true} aboutboximg="AboutBanner1.jpeg" />
+      <Luxurious/>
+      <Situated situated=" Situated In Prime Position At The Foot Of The Slopes Of Courchevel Moriond." />
       <DiscoverBack Discoverhead="Discover Our Underground..." />
       <Gallary />
       <OurRooms />
