@@ -41,7 +41,7 @@ export default function Home(props) {
       Hotel3="Archer Hotel" cateimg3={Hotel3img} Hotel4="Caravalle Hotel" cateimg4={Hotel4img} locationimg1={location1img} locationimg3={location3img}  Mirinda="Miranda has everything for your  trip & every single things  Moriond." 
       mrirnda={true}  />
       {/* <HotelCollection/> */}
-      <HyperLinks hyperupper={true} ></HyperLinks>
+      <HyperLinks  ></HyperLinks>
       <MovingWall></MovingWall>
       <Discover Discoverhead="Discover Our Underground..." />
       <About1 abuotcont= {true} aboutboximg="AboutBanner1.jpeg" />
