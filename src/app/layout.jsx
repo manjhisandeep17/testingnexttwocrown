@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from 'next/link'
+import TopNavbar from "@/Component/TopNavbar";
+// import ChatBott from "@/Component/ChatBoat"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +27,7 @@ export default function RootLayout({
           name="description"
           content="Web site created using create-react-app"
         />
-        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+        <link rel="apple-touch-icon" href="%PUBLIC_URLS%/logo192.png" />
 
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
@@ -39,7 +41,10 @@ export default function RootLayout({
       </head>
 
 
-      <body className="dark">{children}
+      <body className="dark">
+        {/* <ChatBott></ChatBott> */}
+        <TopNavbar></TopNavbar>
+        {children}
 
 
 

@@ -1,10 +1,10 @@
 import React from 'react'
-import TopNavbar from '@/Component/TopNavbar'
 import Main from '@/Component/Main'
 import Link from 'next/link'
 import About1 from '@/Component/About1'
 import Footer from '@/Component/Footer'
 import "./BookingPage.css"
+import Chatbot from '@/Component/ChatBoat';
 
 export default function page() {
 
@@ -12,7 +12,6 @@ export default function page() {
   const hotelpagevid = "video/receptionvideo.mp4";
   return (
     <div>
-      <TopNavbar />
       <Main desc="Then end is well" Video={hotelpagevid} ButtonTitleFirst="Take A Tour" ButtonTitle1="Read More" form={false} formbtn={false} />
 
 
@@ -344,7 +343,7 @@ export default function page() {
 
 
 
-
+    <Chatbot></Chatbot>
       <Footer />
 
     </div>

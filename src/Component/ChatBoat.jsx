@@ -56,7 +56,7 @@ const config = {
 	floating: true,
 };
 
-function App() {
+function ChatBott() {
 	return (
 		<div className="App">
 			<ThemeProvider theme={theme}>
@@ -74,4 +74,4 @@ function App() {
 	);
 }
 
-export default App;
+export default ChatBott;

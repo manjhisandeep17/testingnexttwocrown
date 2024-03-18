@@ -1,5 +1,4 @@
 import React from 'react'
-import TopNavbar from '../../Component/TopNavbar'
 import Main from "@/Component/Main";
 import Banner from "../../../public/AboutBanner1.jpeg"
 import HotelCategory from '@/Component/HotelCategory';
@@ -12,6 +11,7 @@ import Discover from '@/Component/Discover';
 import Luxurious from '@/Component/Luxurious';
 import TakeAtour from '@/Component/TakeAtour';
 import Footer from '@/Component/Footer';
+import Chatbot from '@/Component/ChatBoat';
 
 
 export default function Page() {
@@ -20,13 +20,13 @@ export default function Page() {
 
   return (
     <div>
-      <TopNavbar />
       <Main desc="Welcome To Hotel Page" Video={hotelvid} ButtonTitleFirst="Take A Tour" ButtonTitle1="Read More" form={true} formbtn={true} />
       <HotelCategory title="Hotel Category" subtitle="Category" Hotel1="The Fullerton Hotel" cateimg1={Hotel1img} Hotel2="Taj" cateimg2={Hotel2img} Hotel3="Archer Hotel" cateimg3={Hotel3img} Hotel4="Caravalle Hotel" cateimg4={Hotel4img} Mirinda="Miranda has everything for your  trip & every single things  Moriond." mrirnda={true} />
       {/* <Discover /> */}
       <HotelCollection />
       <Luxurious />
       <TakeAtour />
+      <Chatbot></Chatbot>
       <Footer />
     </div>
   )

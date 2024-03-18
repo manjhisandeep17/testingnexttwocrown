@@ -17,14 +17,13 @@ import LuxuryBlogs from '@/Component/LuxuryBlogs'
 import OurRooms from '@/Component/OurRooms'
 import BlogsFeeds from '@/Component/BlogsFeeds'
 import MonageaTrois from '@/Component/MonageaTrois'
-import ChatBoat from '@/Component/ChatBoat'
 import TakeAtour from "@/Component/TakeAtour"
 import Footer from '@/Component/Footer'
 import Hotel1img from '../../public/box1.jpg'
 import Hotel2img from '../../public/box2.jpg'
 import Hotel3img from '../../public/box3.jpg'
 import Hotel4img from '../../public/box4.jpg'
-
+import ChatBott from "@/Component/ChatBoat"
 import location1img from '../../public/lux-img1.jpg'
 import location3img from '../../public/island-img4.jpg'
 
@@ -35,8 +34,6 @@ export default function Home(props) {
 
   return (
     <main className={styles.main}>
-      <ChatBoat></ChatBoat>
-      <TopNavbar/>
       <Main desc="Then end is well" Video={mainvid} ButtonTitleFirst="Take A Tour" ButtonTitle1="Read More" form={true} formbtn={true} />
       <Situated situated=" Situated In Prime Position At The Foot Of The Slopes Of Courchevel Moriond." />
       <HotelCategory title="Inspired Loding" subtitle="ROOM TYPE " Hotel1= "The Fullerton Hotel" cateimg1={Hotel1img}  Hotel2="Taj" cateimg2={Hotel2img}  
@@ -59,6 +56,7 @@ export default function Home(props) {
 
 
       {/* <TakeAtour /> */}
+      <ChatBott></ChatBott>
       <Footer/>
 
       

@@ -1,10 +1,10 @@
 'use client'
 import Link from 'next/link';
 import "./blog.css"
-import TopNavbar from '@/Component/TopNavbar';
 import Main from '@/Component/Main';
 import BlogComponent from '@/Component/BlogComponent'
 import Subblog1 from '@/Component/Subblog1'
+import Chatbot from '@/Component/ChatBoat';
 
 
 export default function page(props) {
@@ -14,7 +14,6 @@ export default function page(props) {
         <>
 
             <div className='blogbodycoll'>
-                <TopNavbar />
 
                 <Main desc="Then end is well" Video={blogvid} ButtonTitleFirst="Take A Tour" ButtonTitle1="Read More" form={true} formbtn={true} />
 
@@ -249,6 +248,7 @@ export default function page(props) {
 
 
             </div>
+            <Chatbot></Chatbot>
         </>
 
     )
