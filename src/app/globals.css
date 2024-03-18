@@ -3,15 +3,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;600&family=Crimson+Text&family=Roboto+Mono:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
 /*  calender css */
 /* -- usable codes start -- */
 
+.topnavstyle {
+    font-family: "Lora", serif !important;
+    font-optical-sizing: auto !important;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase !important;
+    z-index: 1000;
+    backdrop-filter: blur(15px) !important;
+    border-radius: 10px;
+}
 
-.setlogo{
+
+.firdiv:hover{
+    background-color: rgb(229, 161, 167);
+    color: #fff;
+}
+.secdiv:hover{
+    background-color: #E5C8A7;
+    color: #fff !important;
+}
+.thirdiv:hover{
+    background-color: #E5E5A7;
+}
+.fourdiv:hover{
+    background-color: #A7E5B5;
+}
+.fifdiv:hover{
+    background-color: #A7CAE5;
+}
+.sixdiv:hover{
+    background-color: rgb(229, 161, 167);
+}
+.sevdiv:hover{
+    background-color: #E5C8A7;
+}
+
+.bg-white{
+    padding: 2%;
+    background-color: #fff;
+}
+.setlogo {
     margin-top: -100px;
 }
-ul{
-    padding-left:1rem !important;
+
+ul {
+    padding-left: 1rem !important;
 }
 
 li,
@@ -39,8 +81,9 @@ section {
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
     cursor: pointer;
-    top:50px;
+    top: 50px;
 }
+
 /*-----*/
 
 .signboard {
@@ -50,6 +93,7 @@ section {
     color: #fff;
     border-radius: 10px;
 }
+
 /*-----*/
 
 .front {
@@ -60,10 +104,12 @@ section {
     background: #ff726b;
     text-align: center;
 }
-.minute{
+
+.minute {
     margin-top: -25px !important;
     margin-left: 10px !important;
 }
+
 /* .centdate{
     margin-left: 50px !important;
 } */
@@ -78,10 +124,12 @@ section {
     transform: rotate(-10deg) translate(7px, 8px);
     background: #EFC94C;
 }
-.right li{
+
+.right li {
     margin-top: -25px !important;
     margin-left: 10px
 }
+
 .left {
     position: absolute;
     left: 0;
@@ -93,10 +141,12 @@ section {
     transform: rotate(5deg) translate(-4px, 4px);
     background: #3498DB;
 }
-.left li{
+
+.left li {
     margin-top: -25px !important;
     margin-left: 10px
 }
+
 /*-----*/
 
 .outer:hover .inner {
@@ -106,6 +156,7 @@ section {
     -o-transform: rotate(0) translate(0);
     transform: rotate(0) translate(0);
 }
+
 /*-----*/
 
 .outer:active .inner {
@@ -115,9 +166,11 @@ section {
     -o-transform: rotate(0) translate(0) scale(0.9);
     transform: rotate(0) translate(0) scale(0.9);
 }
+
 .outer:active .front .date {
     -webkit-transform: scale(2);
 }
+
 .outer:active .front .day,
 .outer:active .front .month {
     visibility: hidden;
@@ -128,6 +181,7 @@ section {
     -o-transform: scale(0);
     transform: scale(0);
 }
+
 .outer:active .right {
     -webkit-transform: rotate(-5deg) translateX(80px) scale(0.9);
     -moz-transform: rotate(-5deg) translateX(80px) scale(0.9);
@@ -135,6 +189,7 @@ section {
     -o-transform: rotate(-5deg) translateX(80px) scale(0.9);
     transform: rotate(-5deg) translateX(80px) scale(0.9);
 }
+
 .outer:active .left {
     -webkit-transform: rotate(5deg) translateX(-80px) scale(0.9);
     -moz-transform: rotate(5deg) translateX(-80px) scale(0.9);
@@ -142,6 +197,7 @@ section {
     -o-transform: rotate(5deg) translateX(-80px) scale(0.9);
     transform: rotate(5deg) translateX(-80px) scale(0.9);
 }
+
 /*-----*/
 
 .outer:active .calendarMain {
@@ -149,22 +205,26 @@ section {
     opacity: 0;
     visibility: hidden;
 }
+
 .outer:active .clock {
     -webkit-transform: scale(1.4);
     opacity: 1;
     visibility: visible;
 }
+
 .outer:active .calendarNormal {
     bottom: -30px;
     opacity: 1;
     visibility: visible;
 }
+
 .outer:active .year {
     top: -30px;
     opacity: 1;
     visibility: visible;
     /* letter-spacing: 3px; */
 }
+
 /*-----*/
 
 .calendarMain {
@@ -173,6 +233,7 @@ section {
     position: absolute;
     opacity: 1;
 }
+
 .month,
 .day {
     font-size: 9px;
@@ -181,6 +242,7 @@ section {
     text-transform: uppercase;
     /* letter-spacing: 3px; */
 }
+
 .date {
     font-size: 20px;
     line-height: 10px;
@@ -188,6 +250,7 @@ section {
     text-transform: uppercase;
     /* letter-spacing: 3px; */
 }
+
 /*-----*/
 
 .clock {
@@ -203,6 +266,7 @@ section {
     opacity: 0;
     visibility: hidden;
 }
+
 /*-----*/
 
 .year {
@@ -219,6 +283,7 @@ section {
     visibility: hidden;
     color: #ff726b;
 }
+
 .calendarNormal {
     width: 70% !important;
     position: absolute;
@@ -232,21 +297,25 @@ section {
     opacity: 0;
     visibility: hidden;
 }
+
 .date2 {
     color: #ff726b;
     margin-left: 10px !important;
 }
+
 .day2 {
     color: #3498DB;
     margin-left: -15px !important;
 
-    
+
 }
+
 .month2 {
     color: #EFC94C;
     margin-left: -15px !important;
 
 }
+
 /* -- usable codes end -- */
 
 /* -- unusable codes (text, logo, etc.) -- */
@@ -259,13 +328,15 @@ section {
     text-align: center;
     opacity: 0;
 }
+
 .info li {
     width: 100%;
 }
+
 .hover,
 .click,
 .yeaa {
-    
+
     font-size: 12px;
     line-height: 20px;
     font-weight: 500;
@@ -282,9 +353,11 @@ section {
     font-size: 12px;
     opacity: 0;
 }
+
 em {
     color: #ed4988;
 }
+
 .designer {
     width: 100%;
     height: 50%;
@@ -293,11 +366,13 @@ em {
     text-align: center;
     opacity: 0;
 }
+
 .designer li {
     width: 100%;
     position: absolute;
     bottom: 30%;
 }
+
 .designer a {
     width: 30px;
     height: 30px;
@@ -307,6 +382,7 @@ em {
     margin: auto;
     color: rgba(46, 204, 113, 0.55);
 }
+
 .designer a:after {
     content: "see designs";
     position: absolute;
@@ -319,20 +395,25 @@ em {
     letter-spacing: 2px;
     white-space: nowrap;
 }
+
 .designer a:hover:after {
     color: #2ecc71;
 }
+
 .designer img {
     display: block;
     border-radius: 100%;
 }
+
 body:hover .info,
 body:hover .designer {
     opacity: 1;
 }
+
 ::selection {
     background: transparent;
 }
+
 ::-moz-selection {
     background: transparent;
 }
@@ -364,56 +445,46 @@ body:hover .designer {
 
 
 
-.topnavstyle {
-    font-family: 'Cormorant', serif;
-    font-family: 'Crimson Text', serif;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: bold;
-    font-size: 14px;
-    /* margin-top: -19px !important;*/
-    /* background-color: #fff!important;  */
 
 
-  
-}
 
-.topnavlinkcol{
-    opacity: 1 !important;
-    color: #000 !important;
-}
-.bg-brown{
+
+.bg-brown {
     background-color: rgb(49, 34, 29);
     padding: .5rem;
 }
-.lang{
+
+.lang {
     margin-left: 1.5rem !important;
     padding: .5rem !important;
-   
+
 }
 
-.list-style-nonee{
+.list-style-nonee {
     text-decoration: none !important;
     list-style: none !important;
     padding: 2px;
 }
-.nav-pills .nav-link.active{
-    background-color: #43F609 !important;
-}
-li:visited{
 
-    background-color: #43F609 !important;
+.nav-pills .nav-link.active {
+    background-color: rgb(146, 139, 139) !important;
+}
+.nav-pills .nav-link{
+    color: #000 !important;
 }
 
-.navbar-toggler-icon{
-   background-color:  #43F906 !important;
-   border-radius: 5%;
-   border: none;
-   
+
+.navbar-toggler-icon {
+    background-color: #43F906 !important;
+    border-radius: 5%;
+    border: none;
+
 }
-.navbar-toggler{
-    border-color: transparent!important;
+
+.navbar-toggler {
+    border-color: transparent !important;
     padding: 0px !important;
- }
+}
 
 .mainsec img {
     position: relative;
@@ -484,10 +555,12 @@ li:visited{
 .cardwidth {
     width: 50%;
 }
-.carousel-caption{
+
+.carousel-caption {
     bottom: 16% !important;
 }
-.optrem{
+
+.optrem {
     -webkit-appearance: none;
     background-color: transparent !important;
     outline: none !important;
@@ -495,17 +568,19 @@ li:visited{
     padding-left: 20px;
     padding-right: 20px;
     color: #fff;
-    border-radius:0 !important;
+    border-radius: 0 !important;
 
 
 }
-.optrem option{
+
+.optrem option {
     -webkit-appearance: none;
-    background-color: #615f5f!important;
+    background-color: #615f5f !important;
     color: #fff;
 }
 
 @media only screen and (max-width: 320px) {
+
     /* .navbar-toggler-icon{
         margin-left: -13em;
         margin-top: -14em;
@@ -522,25 +597,28 @@ li:visited{
         color: #fff;
         font-family: 'Cormorant', serif;
         font-family: 'Crimson Text', serif;
-    
+
     }
+
     .Gallarytext h1 {
         font-size: 3rem !important;
-        color: #fff;
+        color: rgb(135, 124, 124);
         font-family: 'Cormorant', serif;
         font-family: 'Crimson Text', serif;
-    
+
     }
+
     .galhead h1 {
         width: 100%;
         font-size: 3rem !important;
         text-align: center;
         font-family: 'Cormorant', serif;
         font-family: 'Crimson Text', serif;
-        color: #fff;
+        color: rgb(135, 124, 124);
         padding: 20px;
         margin-bottom: 25px;
     }
+
     .cardwidth {
         width: 100%;
         align-items: center;
@@ -560,13 +638,15 @@ li:visited{
         margin-top: 1.7rem !important;
 
     }
+
     .Situated h1 {
         font-size: 3rem !important;
-        color: #fff;
+        color: rgb(135, 124, 124);
         font-family: 'Cormorant', serif;
         font-family: 'Crimson Text', serif;
-    
+
     }
+
     .Mirinda h1 {
         width: 100%;
         font-size: 3rem !important;
@@ -574,41 +654,46 @@ li:visited{
         font-family: 'Cormorant', serif;
         font-family: 'Crimson Text', serif;
         background-color: rgb(49, 34, 29);
-        color: #fff;
+        color: rgb(135, 124, 124);
         padding: 20px;
-    
+
     }
-    .mirinda0 h1{
+
+    .mirinda0 h1 {
         width: 100%;
         font-size: 3rem !important;
         text-align: center;
         font-family: 'Cormorant', serif;
         font-family: 'Crimson Text', serif;
         background-color: rgb(49, 34, 29);
-        color: #fff;
+        color: rgb(135, 124, 124);
         padding: 20px;
     }
-    .Luxtext h2{
+
+    .Luxtext h2 {
         color: #43F609;
         font-size: 3rem !important;
         font-family: 'Cormorant', serif;
         font-family: 'Crimson Text', serif;
     }
+
     .Discover h1 {
         font-size: 2.5rem !important;
         font-weight: bold;
-        color: #fff;
-    
+        color: rgb(135, 124, 124);
     }
+
     .about1 h1 {
         padding: 30px;
-        font-size: 3rem !important;
+        font-size: 6rem;
         text-align: center;
         background-color: rgb(61, 52, 49);
-        color: #fff;
+        color: rgb(146, 139, 139);
         font-family: 'Cormorant', serif;
         font-family: 'Crimson Text', serif;
+        text-transform:capitalize;
     }
+
     .DiscoverBack h1 {
         font-family: 'Cormorant', serif;
         font-family: 'Crimson Text', serif;
@@ -618,15 +703,17 @@ li:visited{
         font-size: 2.5rem !important;
         padding: 20px;
     }
-    .Swiperjs img{
+
+    .Swiperjs img {
         height: 11rem !important;
     }
 }
 
 @media only screen and (max-width: 620px) {
-    .dblock{
+    .dblock {
         display: none;
     }
+
     .cardwidth {
         width: 100%;
         align-items: center;
@@ -1018,15 +1105,18 @@ li:visited{
     width: 100%;
     left: 0;
 }
-.imgsecbooking img{
+
+.imgsecbooking img {
     width: 66%;
     left: 0;
     height: 101%;
 }
+
 .cardwidth0 {
     width: 80%;
     top: 0;
 }
+
 .footmar {
     margin-left: 8%;
 }
@@ -1145,13 +1235,21 @@ li:visited{
     top: 300px;
 }
 
-.Luxtext h2{
+
+.luxpara p{
+    color: rgb(146, 139, 139);
+    font-family: "Lora", serif !important;
+    font-optical-sizing: auto !important;
+    
+}
+.Luxtext h2 {
     color: #43F609;
     font-size: 5rem;
     font-family: 'Cormorant', serif;
     font-family: 'Crimson Text', serif;
 }
-.Luxtext h3{
+
+.Luxtext h3 {
     font-family: 'Cormorant', serif;
     font-family: 'Crimson Text', serif;
     font-size: 2rem;
@@ -1173,18 +1271,19 @@ li:visited{
     font-family: 'Cormorant', serif;
     font-family: 'Crimson Text', serif;
     background-color: rgb(49, 34, 29);
-    color: #fff;
+    color: rgb(135, 124, 124);
     padding: 20px;
 
 }
-.mirinda0 h1{
+
+.mirinda0 h1 {
     width: 100%;
     font-size: 5rem;
     text-align: center;
     font-family: 'Cormorant', serif;
     font-family: 'Crimson Text', serif;
     background-color: rgb(49, 34, 29);
-    color: #fff;
+    color: rgb(135, 124, 124);
     padding: 20px;
 }
 
@@ -1233,13 +1332,13 @@ li:visited{
 }
 
 .Discover p {
-    color: #fff;
+    color: rgb(135, 124, 124);
 }
 
 .Discover h1 {
     font-size: 5rem;
     font-weight: bold;
-    color: #fff;
+    color: rgb(135, 124, 124);
 
 }
 
@@ -1249,13 +1348,13 @@ li:visited{
 }
 
 .Situated p {
-    color: #fff;
+    color: rgb(135, 124, 124);
 }
 
 .Situated h1 {
     font-size: 5rem;
     /* font-weight: bold; */
-    color: #fff;
+    color: rgb(135, 124, 124);
     font-family: 'Cormorant', serif;
     font-family: 'Crimson Text', serif;
     /* font-family: 'Roboto Mono', monospace; */
@@ -1272,9 +1371,10 @@ li:visited{
     font-size: 6rem;
     text-align: center;
     background-color: rgb(61, 52, 49);
-    color: #fff;
+    color: rgb(146, 139, 139);
     font-family: 'Cormorant', serif;
     font-family: 'Crimson Text', serif;
+    text-transform: capitalize;
 }
 
 
@@ -1330,7 +1430,7 @@ li:visited{
     overflow: hidden;
     height: 100%;
     border: 3px solid transparent;
-    
+
 }
 
 .Gallary:hover {
@@ -1374,7 +1474,7 @@ li:visited{
     text-align: center;
     font-family: 'Cormorant', serif;
     font-family: 'Crimson Text', serif;
-    color: #fff;
+    color: rgb(135, 124, 124);
     padding: 20px;
     margin-bottom: 25px;
 }
@@ -1387,7 +1487,7 @@ li:visited{
 }
 
 .Gallarytext p {
-    color: #fff;
+    color: rgb(135, 124, 124);
     text-align: justify;
     font-size: 25px;
     font-weight: 400;
@@ -1396,7 +1496,7 @@ li:visited{
 .Gallarytext h1 {
     font-size: 5rem;
     /* font-weight: bold; */
-    color: #fff;
+    color: rgb(135, 124, 124);
     font-family: 'Cormorant', serif;
     font-family: 'Crimson Text', serif;
     /* font-family: 'Roboto Mono', monospace; */
@@ -1404,12 +1504,12 @@ li:visited{
 }
 
 /* hyperlink section */
-.hypergalback{
-    background-image: linear-gradient(to top,  rgb(0, 0, 0), rgb(56, 29, 29));
+.hypergalback {
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(56, 29, 29));
 
 }
 
-.hypergalheight{
+.hypergalheight {
     align-items: center;
     width: 100%;
     height: 105vh;
@@ -1417,15 +1517,15 @@ li:visited{
 }
 
 
-.hypergal{
+.hypergal {
     position: absolute;
     align-items: center;
     justify-content: center;
     object-fit: cover;
-    padding-right:2%;
+    padding-right: 2%;
 }
 
-.hypergal img{
+.hypergal img {
     outline: 3px solid #fb2929;
     outline-offset: -20px;
     height: 100vh;
@@ -1433,7 +1533,8 @@ li:visited{
     object-fit: cover;
     aspect-ratio: 2/3;
 }
-:hover.hypergal img{
+
+:hover.hypergal img {
     outline: 3px solid rgb(77, 239, 32);
     outline-offset: -20px;
     height: 100vh;
@@ -1442,7 +1543,8 @@ li:visited{
     object-fit: cover;
 
 }
-.hypertextcenter h2{
+
+.hypertextcenter h2 {
     position: relative;
     font-family: 'Roboto Mono', monospace;
     letter-spacing: -2px;
@@ -1454,42 +1556,50 @@ li:visited{
     z-index: 999;
 
 }
-.flaotpading{
+
+.flaotpading {
     padding: 1em;
 }
 
 @media only screen and (max-width: 320px) {
-    .twoacrown{
+    .twoacrown {
         font-size: 2.5rem !important;
         margin-bottom: 1rem !important;
     }
-    .flaotpading{
+
+    .flaotpading {
         padding: 0em;
     }
-    .texth2 h2{
+
+    .texth2 h2 {
         font-size: 1.5rem !important;
     }
-    .hyperdiv img{
+
+    .hyperdiv img {
         width: 100% !important;
     }
-    .lang{
+
+    .lang {
         margin-left: 12.5rem !important;
         /* padding: .5rem !important; */
-       
+
     }
 }
-.monatage{
+
+.monatage {
     font-family: 'Cormorant', serif;
     font-family: 'Crimson Text', serif;
     font-size: 4rem;
-    color: yellowgreen;
+    color: rgb(146, 139, 139);
     text-align: center;
 }
-.mont p{
-    color: #fff;
+
+.mont p {
+    color: rgb(146, 139, 139);
     text-align: center;
 }
-.twoacrown{
+
+.twoacrown {
     font-family: 'Cormorant', serif;
     font-family: 'Crimson Text', serif;
     font-size: 5rem;
@@ -1499,7 +1609,8 @@ li:visited{
     /* font-weight: bolder;  */
     margin-bottom: 4rem;
 }
-.texth2 h2{
+
+.texth2 h2 {
     font-family: 'Cormorant', serif;
     font-family: 'Crimson Text', serif;
     font-size: 2rem;
@@ -1507,15 +1618,16 @@ li:visited{
     text-align: center;
     text-transform: uppercase;
     font-family: 'Roboto Mono', monospace;
-    font-weight: bolder; 
+    font-weight: bolder;
 }
 
-.hyperdiv{
+.hyperdiv {
     height: 100vh;
     /* overflow: hidden; */
-    
+
 }
-.hyperdiv img{
+
+.hyperdiv img {
     margin: auto;
     justify-content: center;
     place-items: center;
@@ -1525,23 +1637,25 @@ li:visited{
     position: absolute;
     width: 38%;
     left: 0;
-    right:0;
+    right: 0;
     padding: 1%;
-    opacity: .6;    
-    
+    opacity: .6;
+
 }
 
-.hyperlinks123{
+.hyperlinks123 {
     position: relative;
     color: #fff;
     top: 10%;
-    
+
 }
-.hyperback{
-    background-color: #000; 
-    background-image: linear-gradient(to right, rgb(56, 29, 29), rgb(0, 0, 0),rgb(0, 0, 0), rgb(56, 29, 29));
+
+.hyperback {
+    background-color: #000;
+    background-image: linear-gradient(to right, rgb(56, 29, 29), rgb(0, 0, 0), rgb(0, 0, 0), rgb(56, 29, 29));
 }
-.returnof{
+
+.returnof {
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-style: normal;
@@ -1549,7 +1663,8 @@ li:visited{
     text-align: center;
     word-spacing: 5px;
 }
-.returnof span{
+
+.returnof span {
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-style: normal;
@@ -1626,21 +1741,23 @@ li:visited{
 }
 
 
-.BlogsFeedstext{
+.BlogsFeedstext {
     background-color: #fff;
     color: #000;
     padding: 1rem;
 }
 
 
-.Swiperjs{
+.Swiperjs {
     overflow: hidden;
 }
-.Swiperjs img{
+
+.Swiperjs img {
     height: 400px;
     background-color: #fff;
 
 }
+
 .SwiperSlide {
     overflow: hidden;
 }
@@ -1651,35 +1768,47 @@ li:visited{
     transition: all 3s;
     /* height: 280px; */
 }
+
 .SwiperSlide :hover img {
     filter: grayscale(0%);
     transform: scale(1.3);
 
 }
-.bgblack{
+
+.bgblack {
     background-color: #000;
     padding-bottom: 15px;
-    
+
 }
-.MonageaTrois{
+
+.MonageaTrois {
     background-color: rgb(49, 34, 29);
     font-family: 'Cormorant', serif;
     font-family: 'Crimson Text', serif;
     padding: 1rem;
 }
-.MonageaTrois h1{
-    color: #fff;
+
+.MonageaTrois h1 {
+    color: rgb(146, 139, 139);
+    font-family: "Lora", serif !important;
+    font-optical-sizing: auto !important;
     font-size: 5rem;
 }
-.MonageaTrois h6{
-    color: #fff;
-    font-size: 2rem;
+
+.MonageaTrois h6 {
+    color: rgb(146, 139, 139);
+    font-family: "Lora", serif !important;
+    font-optical-sizing: auto !important;
+    font-size: 1.8rem;
     text-align: justify;
     padding: 10px;
+    font-weight: 100;
 }
-.monagetower{
+
+.monagetower {
     overflow: hidden;
 }
+
 .MonageaTrois img {
     filter: grayscale(100%);
     object-fit: cover;
@@ -1687,6 +1816,7 @@ li:visited{
     overflow: hidden;
     /* height: 280px; */
 }
+
 .MonageaTrois :hover img {
     filter: grayscale(0%);
     transform: scale(1.07);
@@ -1694,22 +1824,25 @@ li:visited{
 
 }
 
-.MonageaTrois2 img{
+.MonageaTrois2 img {
     height: 18rem;
     width: 100%;
     overflow: hidden;
 }
+
 .MonageaTrois2 img {
     filter: grayscale(100%);
     object-fit: cover;
     transition: all 2s;
     /* height: 280px; */
 }
+
 .MonageaTrois2 :hover img {
     filter: grayscale(0%);
     transform: scale(1.07);
 }
-.MonageaTrois21{
+
+.MonageaTrois21 {
     background-color: rgb(49, 34, 29);
     color: greenyellow;
     padding-top: 1rem;
@@ -1718,27 +1851,29 @@ li:visited{
 
 
 
-.collectionBook{
+.collectionBook {
     position: absolute;
     overflow: hidden;
 }
 
-.bookingbor{
-   overflow: hidden;
-   border: 3px solid transparent;
+.bookingbor {
+    overflow: hidden;
+    border: 3px solid transparent;
 
 }
-.bookingbor:hover{
+
+.bookingbor:hover {
     border: 3px solid greenyellow;
     border-radius: 5px;
     overflow: hidden;
     /* padding-top: 5px;
     padding-bottom: 5px; */
 }
-.collectionBook img{
-        filter: grayscale(100%);
-        object-fit: cover;
-        transition: all 2s;
+
+.collectionBook img {
+    filter: grayscale(100%);
+    object-fit: cover;
+    transition: all 2s;
 }
 
 .collectionBook img:hover {
@@ -1746,20 +1881,23 @@ li:visited{
     transform: scale(1.3);
     border: 2px solid greenyellow;
 }
-.HotelPage h2{
+
+.HotelPage h2 {
     font-family: 'Cormorant', serif;
     font-family: 'Crimson Text', serif;
     padding: 1rem;
     font-size: 3rem;
 }
-.linetext h6{
+
+.linetext h6 {
     overflow: hidden;
     text-align: center;
     font-family: 'Cormorant', serif;
     font-family: 'Crimson Text', serif;
 }
-.linetext h6::before{
-    
+
+.linetext h6::before {
+
     background-color: #000;
     content: "";
     display: inline-block;
@@ -1768,9 +1906,10 @@ li:visited{
     width: 40%;
     margin-right: 5px;
     margin-left: -10%;
-    
+
 }
-.linetext h6::after{
+
+.linetext h6::after {
     background-color: #000;
     content: "";
     display: inline-block;
@@ -1781,33 +1920,36 @@ li:visited{
 
 
 }
-.bookpage0{
- background-color: #edefed;
- height: max-content;
+
+.bookpage0 {
+    background-color: #edefed;
+    height: max-content;
 }
-.bookpageimgset{
+
+.bookpageimgset {
     margin-top: 5rem;
 }
 
 /* first box  */
 
-.Catheart{
+.Catheart {
     position: relative;
-    
+
 }
-.Catheart1{
+
+.Catheart1 {
     position: absolute;
-    top:15%;
-    right:5%;
+    top: 15%;
+    right: 5%;
     color: transparent;
     transform: translate(-50%, -50%);
     opacity: 1;
     font-size: 28px;
-    
+
 
 }
 
-.Catheart:Hover .Catheart1 i{
+.Catheart:Hover .Catheart1 i {
     opacity: 1;
     color: orangered;
     font-size: 28px;
@@ -1817,31 +1959,33 @@ li:visited{
     padding-left: 8px;
     padding-right: 8px;
     background-color: #fff;
-    
-    
+
+
 }
 
-.rightarrow{
+.rightarrow {
     position: absolute;
-    bottom:0;
-    right:5%;
+    bottom: 0;
+    right: 5%;
     transform: translate(-50%, -50%);
     opacity: 1;
     font-size: 38px;
     transition: all;
     transition-duration: 1s;
 }
-.rightarrow i{
+
+.rightarrow i {
     color: transparent;
 }
-.rightarrow i:hover{
+
+.rightarrow i:hover {
     color: blue !important;
 }
 
 
-.Catheart:Hover .rightarrow i{
-    bottom:0;
-    right:2%;
+.Catheart:Hover .rightarrow i {
+    bottom: 0;
+    right: 2%;
     opacity: 1;
     color: #fff;
     font-size: 38px;
@@ -1850,12 +1994,13 @@ li:visited{
     transition: all;
     transition-duration: 1s;
     display: block !important;
-    
-    
+
+
 }
-.box2heart:Hover .rightarrow i{
-    bottom:0;
-    right:2%;
+
+.box2heart:Hover .rightarrow i {
+    bottom: 0;
+    right: 2%;
     opacity: 1;
     color: #fff;
     font-size: 38px;
@@ -1863,11 +2008,12 @@ li:visited{
     margin-right: -10px;
     transition: all;
     transition-duration: 1s;
-    
+
 }
-.box3heart:Hover .rightarrow i{
-    bottom:0;
-    right:2%;
+
+.box3heart:Hover .rightarrow i {
+    bottom: 0;
+    right: 2%;
     opacity: 1;
     color: #fff;
     font-size: 38px;
@@ -1875,11 +2021,12 @@ li:visited{
     margin-right: -10px;
     transition: all;
     transition-duration: 1s;
-    
+
 }
-.box4heart:Hover .rightarrow i{
-    bottom:0;
-    right:2%;
+
+.box4heart:Hover .rightarrow i {
+    bottom: 0;
+    right: 2%;
     opacity: 1;
     color: #fff;
     font-size: 38px;
@@ -1887,26 +2034,28 @@ li:visited{
     margin-right: -10px;
     transition: all;
     transition-duration: 1s;
-    
+
 }
 
 
 
- /* second Box */
+/* second Box */
 
-.box2heart{
+.box2heart {
     position: relative;
 }
-.box2heart1{
+
+.box2heart1 {
     position: absolute;
     top: 5%;
     right: 5%;
     color: transparent;
-    font-size: 28px; 
-    
+    font-size: 28px;
+
 
 }
-.box2heart:Hover .box2heart1 i{
+
+.box2heart:Hover .box2heart1 i {
     opacity: 1;
     color: orangered;
     font-size: 28px;
@@ -1917,20 +2066,23 @@ li:visited{
     padding-right: 8px;
     background-color: #fff;
 }
- /* third Box */
 
- .box3heart{
+/* third Box */
+
+.box3heart {
     position: relative;
 }
-.box3heart1{
+
+.box3heart1 {
     position: absolute;
     top: 8%;
     right: 5%;
     color: transparent;
-    font-size: 28px; 
-    
+    font-size: 28px;
+
 }
-.box3heart:Hover .box3heart1 i{
+
+.box3heart:Hover .box3heart1 i {
     opacity: 1;
     color: orangered;
     font-size: 28px;
@@ -1940,22 +2092,25 @@ li:visited{
     padding-left: 8px;
     padding-right: 8px;
     background-color: #fff;
-    
-}
- /* Fourth Box */
 
- .box4heart{
+}
+
+/* Fourth Box */
+
+.box4heart {
     position: relative;
 }
-.box4heart1{
+
+.box4heart1 {
     position: absolute;
     top: 8%;
     right: 5%;
     color: transparent;
-    font-size: 28px; 
+    font-size: 28px;
     /* opacity: 0.1; */
 }
-.box4:Hover .box4heart1 i{
+
+.box4:Hover .box4heart1 i {
     color: orangered;
     font-size: 28px;
     border-radius: 50%;
@@ -1964,29 +2119,32 @@ li:visited{
     padding-left: 8px;
     padding-right: 8px;
     background-color: #fff;
-    
+
 }
 
 
 
-.pacific{
+.pacific {
     position: relative;
     top: 0;
     left: 0;
 }
+
 .pacific1 i {
     padding: 3px;
 }
-.pacific1{
+
+.pacific1 {
     position: absolute;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     color: #fff;
     transform: translate(-50%, -50%);
     font-size: 28px;
     opacity: .3;
-   
+
 }
+
 .card:Hover .pacific1 {
     opacity: 1;
     color: greenyellow;
@@ -1999,20 +2157,23 @@ li:visited{
 
 
 
-.collectionheart{
+.collectionheart {
     position: relative;
 }
-.colborder:hover{
+
+.colborder:hover {
     border: 3px solid greenyellow;
     border-radius: 5px;
 }
+
 .collectionhearthover i {
     padding: 10px;
 }
-.collectionhearthovertop{
+
+.collectionhearthovertop {
     position: absolute;
-    top:12%;
-    right:2%;
+    top: 12%;
+    right: 2%;
     color: #fff;
     transform: translate(-50%, -50%);
     font-size: 28px;
@@ -2022,31 +2183,28 @@ li:visited{
     padding-right: 8px;
     padding-top: 3px;
 }
+
 .collectionheart:Hover .collectionhearthovertop {
     opacity: 1;
     color: red;
     background-color: #fff;
-   
+
 }
-.collectionhearthover{
+
+.collectionhearthover {
     position: absolute;
-    bottom:4%;
+    bottom: 4%;
     color: #fff;
     font-size: 28px;
     opacity: .3;
-    
+
 
 }
+
 .collectionheart:Hover .collectionhearthover {
     opacity: 1;
     color: greenyellow;
     transition: all;
     transition-duration: 1s;
-    
+
 }
-
-
-
-
-
-

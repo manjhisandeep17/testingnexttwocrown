@@ -17,6 +17,7 @@ import LuxuryBlogs from '@/Component/LuxuryBlogs'
 import OurRooms from '@/Component/OurRooms'
 import BlogsFeeds from '@/Component/BlogsFeeds'
 import MonageaTrois from '@/Component/MonageaTrois'
+import ChatBoat from '@/Component/ChatBoat'
 import TakeAtour from "@/Component/TakeAtour"
 import Footer from '@/Component/Footer'
 import Hotel1img from '../../public/box1.jpg'
@@ -34,6 +35,7 @@ export default function Home(props) {
 
   return (
     <main className={styles.main}>
+      <ChatBoat></ChatBoat>
       <TopNavbar/>
       <Main desc="Then end is well" Video={mainvid} ButtonTitleFirst="Take A Tour" ButtonTitle1="Read More" form={true} formbtn={true} />
       <Situated situated=" Situated In Prime Position At The Foot Of The Slopes Of Courchevel Moriond." />

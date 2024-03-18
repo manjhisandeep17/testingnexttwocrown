@@ -7,7 +7,7 @@ export default function About1(props) {
       {
         props.abuotcont ?
           <div className='about1 mt-5 '>
-            <h1 className='m-0'>ABOUT US</h1>
+            <h1 className='m-0'>About Us</h1>
           </div>
           : ""}
 

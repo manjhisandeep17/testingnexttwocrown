@@ -7,7 +7,7 @@ export default function Gallary() {
             <div className='container-fluid gallaryback'>
                 <div className='container'>
                     <div className='row pb-5'>
-                        <div className='galhead'> <h1 className='text-white'>Our Gallery</h1></div>
+                        <div className='galhead'> <h1 className=''>Curated Gallery</h1></div>
                         <div className='col-md-4 mt-3 mb-2 pacific '>
                             <div className='Gallary '>
                                 <div class="card bg-dark text-white ">

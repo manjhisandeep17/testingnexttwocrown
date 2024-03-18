@@ -25,29 +25,26 @@ export default function TopNavbar() {
             href: "/",
         },
         {
-            name: "Hotels",
+            name: "HOTEL",
             href: "/Hotels",
         },
         {
-            name: "Career",
+            name: "FINE VILLAS",
             href: "/Career",
         },
         {
-            name: "Blogs",
+            name: "CHATEAUX",
             href: "/blogPage",
         },
         {
-            name: "Register",
+            name: "PRIVATE ISLAND",
             href: "/Register",
         },
         {
-            name: "Location",
+            name: "LOCATION VANUE",
             href: "/Location",
         },
-        {
-            name: "Contact",
-            href: "/Contact",
-        },
+
 
     ]
 
@@ -84,7 +81,7 @@ export default function TopNavbar() {
 
     return (
         <div style={{ position: "sticky", top: "-155px", zIndex: "999", }} >
-            <div style={{ position: "absolute", top: 0, right: 0, left: 0, }} >
+            <div style={{ position: "absolute", top: 0, right: 0, left: 0, }}  >
                 <div className='container ' >
                     <div className='row'>
                         <div className='col-md-10'></div>
@@ -124,9 +121,9 @@ export default function TopNavbar() {
                     <Image src={Logo} style={{ width: "200px", height: "70px", padding: "10px" }} alt='jsdbvd' />
                 </h1>
 
-                <div className='d-flex justify-content-around align-items-center  topnavstyle '>
+                <div className='d-flex justify-content-around align-items-center  '>
                     <SideBar />
-                    <div className='  navbar navbar-expand-lg  mx-5'>
+                    <div className='  navbar navbar-expand-lg  mx-5 topnavstyle'>
                         <div className="container-fluid " >
                             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                                 <span className="navbar-toggler-icon"></span>
@@ -135,23 +132,50 @@ export default function TopNavbar() {
 
                                 <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll  " >
 
-                                    {
-                                        navlink.map((lin) => {
-                                            return (
-                                                <Link aria-current="page" href={lin.href} className={"nav-link active topnavlinkcol nav-item px-3"}>
-                                                    {lin.name} </Link>
-                                            )
+                                    <div className='firdiv'>
+                                        <Link aria-current="page" href="/" className={"nav-link active topnavlinkcol nav-item px-3"}>
+                                            home
+                                        </Link>
+                                    </div>
+                                    <div className="secdiv">
+                                        <Link aria-current="page" href="/Hotels" className={"nav-link active topnavlinkcol nav-item px-3"}>
+                                            Hotels
+                                        </Link>
+                                    </div>
+                                    <div className="thirdiv">
+                                        <Link aria-current="page" href="#" className={"nav-link active topnavlinkcol nav-item px-3"}>
+                                            Fine Villas
+                                        </Link>
+                                    </div>
+                                    <div className="fourdiv">
+                                        <Link aria-current="page" href="/Career" className={"nav-link active topnavlinkcol nav-item px-3"}>
+                                            CHATEAUX
+                                        </Link>
+                                    </div>
+                                    <div className="fifdiv">
+                                        <Link aria-current="page" href="/blogPage" className={"nav-link active topnavlinkcol nav-item px-3"}>
+                                            Blogs
+                                        </Link>
+                                    </div>
+                                    <div className="sixdiv">
+                                        <Link aria-current="page" href="/blogPage" className={"nav-link active topnavlinkcol nav-item px-3"}>
+                                            Private Island
+                                        </Link>
+                                    </div>
 
-                                            // <li className="nav-item px-3">
-                                            //     <NavLink className={({isActive}) =>{
-                                            //         return(
+                                    <div className="sevdiv">
+                                        <Link aria-current="page" href="/Location" className={"nav-link active topnavlinkcol nav-item px-3"}>
+                                            Location & Venue
+                                        </Link>
+                                    </div>
+
+                                    {/* // <li className="nav-item px-3">
+                                            //     <NavLink className={({isActive}) =>{ */}
+                                    {/* //         return(
                                             //             "nav-link active topnavlinkcol text-decoration-none " + (isActive ? ".nav-pills .nav-link.active bg-dark": " " ));
                                             //         }}
                                             //      aria-current="page" href={lin.href}>{lin.name}
-                                            //     </NavLink>
-                                            // </li>)
-                                        })
-                                    }
+                                            //     </NavLink> */}
 
 
                                 </ul>
