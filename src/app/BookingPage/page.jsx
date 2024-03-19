@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Main from '@/Component/Main'
 import Link from 'next/link'

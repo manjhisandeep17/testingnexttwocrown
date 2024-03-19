@@ -19,34 +19,34 @@ export default function TopNavbar() {
 
 
 
-    const navlink = [
-        {
-            name: "Home",
-            href: "/",
-        },
-        {
-            name: "HOTEL",
-            href: "/Hotels",
-        },
-        {
-            name: "FINE VILLAS",
-            href: "/Career",
-        },
-        {
-            name: "CHATEAUX",
-            href: "/blogPage",
-        },
-        {
-            name: "PRIVATE ISLAND",
-            href: "/Register",
-        },
-        {
-            name: "LOCATION VANUE",
-            href: "/Location",
-        },
+    // const navlink = [
+    //     {
+    //         name: "Home",
+    //         href: "/",
+    //     },
+    //     {
+    //         name: "HOTEL",
+    //         href: "/Hotels",
+    //     },
+    //     {
+    //         name: "FINE VILLAS",
+    //         href: "/Career",
+    //     },
+    //     {
+    //         name: "CHATEAUX",
+    //         href: "/blogPage",
+    //     },
+    //     {
+    //         name: "PRIVATE ISLAND",
+    //         href: "/Register",
+    //     },
+    //     {
+    //         name: "LOCATION VANUE",
+    //         href: "/Location",
+    //     },
 
 
-    ]
+    // ]
 
 
     // useEffect(() => {
@@ -143,7 +143,7 @@ export default function TopNavbar() {
                                         </Link>
                                     </div>
                                     <div className="thirdiv">
-                                        <Link aria-current="page" href="#" className={"nav-link active topnavlinkcol nav-item px-3"}>
+                                        <Link aria-current="page" href="/Hotels" className={"nav-link active topnavlinkcol nav-item px-3"}>
                                             Fine Villas
                                         </Link>
                                     </div>

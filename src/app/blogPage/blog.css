@@ -81,6 +81,7 @@ h5 {
     filter: grayscale(100%);
     object-fit: cover;
     transition: all 3s;
+    height: 35rem;
 }
 
 .Blogs:hover img {

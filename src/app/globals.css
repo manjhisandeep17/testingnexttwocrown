@@ -7,6 +7,19 @@
 
 /*  calender css */
 /* -- usable codes start -- */
+.css-vjiotx-MuiSpeedDial-root {
+    align-items: end !important;
+    margin-right: 16px !important;
+    height: 0vh !important;
+}
+.css-7dv1rb-MuiButtonBase-root-MuiFab-root-MuiSpeedDial-fab{
+    min-height: 55px !important;
+}
+
+/* .css-8je8zh-MuiTouchRipple-root{
+    background-color: #43F609;
+} */
+
 
 .topnavstyle {
     font-family: "Lora", serif !important;

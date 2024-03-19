@@ -4,7 +4,8 @@ import "./blog.css"
 import Main from '@/Component/Main';
 import BlogComponent from '@/Component/BlogComponent'
 import Subblog1 from '@/Component/Subblog1'
-import Chatbot from '@/Component/ChatBoat';
+// import Chatbot from '@/Component/ChatBoat';
+import Cursor from '@/Component/Cursor';
 
 
 export default function page(props) {
@@ -17,15 +18,9 @@ export default function page(props) {
 
                 <Main desc="Then end is well" Video={blogvid} ButtonTitleFirst="Take A Tour" ButtonTitle1="Read More" form={true} formbtn={true} />
 
-                <div>
-                </div>
-
-
-
-
 
                 
-
+                <Cursor></Cursor>
                 {/* <div style={{ height: "110vh" }}>
                     <BlogComponent></BlogComponent>
                     <Subblog1></Subblog1>
@@ -101,7 +96,7 @@ export default function page(props) {
                     <div className='row'>
                         <div className=' col-md-12 '>
                             <div class="row">
-                                <div className='col-md-6'>
+                                <div className='col-md-6 '>
                                     <div class="card mb-3 p-3  blogbodycol">
                                         <h2>Duplex Restaurent</h2>
                                         <h5>Title description, Dec 7, 2017</h5>
@@ -113,12 +108,14 @@ export default function page(props) {
                                         </p>
                                     </div>
                                 </div>
-                                <div className='col-md-6'>
+                                <div className='col-md-6 '>
                                     <div class="card mb-3 p-3  blogbodycol">
                                         <h2>Food Section</h2>
                                         <h5>Title description, Sep 2, 2017</h5>
                                         <div class="Blogs" ><img class="card-img" src="FoodSection.jpg" alt="Card image" /></div>
-                                        <p className='mt-3 blogpara'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur reiciendis dolore ipsam beatae nam consequatur nisi deleniti
+                                        <p className='mt-3 blogpara '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur reiciendis dolore ipsam beatae nam consequatur nisi deleniti
+                                            possimus, modi, explicabo nulla sequi exercitationem ipsum perspiciatis? Assumenda optio eligendi, consequuntur consequatur
+                                            aspernatur laudantium deserunt reiciendis amet dicta quibusdam
                                             distinctio quod animi praesentium placeat, nemo commodi enim aliquid totam doloremque, atque veritatis?
                                         </p>
                                     </div>
@@ -126,6 +123,8 @@ export default function page(props) {
                             </div>
 
                         </div>
+                        
+                        
                         {/* <div className='col-md-4'>
                         <div class="">
                             
@@ -164,29 +163,6 @@ export default function page(props) {
                     </div>
                 </div>
 
-                <div className='container-fluid'>
-                    <div className='row p-3 m-1 border border-secondary mb-5 mt-2 rounded-2  '>
-                        <div className='col-md-4'></div>
-                        <div className='col-md-4 text-center p-2'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum labore, doloribus laudantium iste a, corporis itaque
-                            tempore voluptatem recusandae assumenda nobis distinctio sed omnis. Alias, neque ipsum minus sit adipisci exercitationem saepe aperiam
-                            eum nostrum quam voluptatibus quasi a quae, labore debitis. Sed itaque iure velit. Enim veritatis deleniti quos.
-                        </div>
-                        <div className='text-center text-dark'>
-                            <li><a href="#">Spotyfy</a></li>
-                            <li><a href="#">Amazon Music</a></li>
-                            <li><a href="#">Jio Music</a></li>
-                            <li><a href="#">Youtube Music</a></li>
-                            <li><a href="#">Apple Music</a></li>
-                        </div>
-                        <div className='col-md-4'></div>
-                    </div>
-                </div>
-
-
-
-
-
                 <div className='container-fluid '>
                     <div className='row hyperback' >
                         <div className='hypergalback'>
@@ -220,8 +196,31 @@ export default function page(props) {
                     </div>
                 </div>
 
+                <div className='container-fluid'>
+                    <div className='row p-3 m-1 border border-secondary mb-5 mt-2 rounded-2  '>
+                        <div className='col-md-4'></div>
+                        <div className='col-md-4 text-center p-2'>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum labore, doloribus laudantium iste a, corporis itaque
+                            tempore voluptatem recusandae assumenda nobis distinctio sed omnis. Alias, neque ipsum minus sit adipisci exercitationem saepe aperiam
+                            eum nostrum quam voluptatibus quasi a quae, labore debitis. Sed itaque iure velit. Enim veritatis deleniti quos.
+                        </div>
+                        <div className='text-center text-dark'>
+                            <li><a href="#">Spotyfy</a></li>
+                            <li><a href="#">Amazon Music</a></li>
+                            <li><a href="#">Jio Music</a></li>
+                            <li><a href="#">Youtube Music</a></li>
+                            <li><a href="#">Apple Music</a></li>
+                        </div>
+                        <div className='col-md-4'></div>
+                    </div>
+                </div>
 
-                <div className='container mt-5'>
+
+
+               
+
+
+                <div className='container-fluid mt-5'>
                     <div className='row'>
                         <div className='col-md-6'>
                             <div class="card mb-3 p-3  blogbodycol">
@@ -248,7 +247,7 @@ export default function page(props) {
 
 
             </div>
-            <Chatbot></Chatbot>
+            {/* <Chatbot></Chatbot> */}
         </>
 
     )
