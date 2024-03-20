@@ -4,7 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-
+body{
+    overflow-x: hidden;
+}
 /*  calender css */
 /* -- usable codes start -- */
 .css-vjiotx-MuiSpeedDial-root {

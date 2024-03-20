@@ -1,14 +1,33 @@
 'use client'
+import React from 'react';
 import Link from 'next/link';
 import "./blog.css"
 import Main from '@/Component/Main';
 import BlogComponent from '@/Component/BlogComponent'
 import Subblog1 from '@/Component/Subblog1'
 // import Chatbot from '@/Component/ChatBoat';
-import Cursor from '@/Component/Cursor';
+// import Cursor from '@/Component/Cursor';
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
+
 
 
 export default function page(props) {
+    const [open, setOpen] = React.useState(false);
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
+
 
     const blogvid = "video/BlogVideo.mp4"
     return (
@@ -19,8 +38,10 @@ export default function page(props) {
                 <Main desc="Then end is well" Video={blogvid} ButtonTitleFirst="Take A Tour" ButtonTitle1="Read More" form={true} formbtn={true} />
 
 
-                
-                <Cursor></Cursor>
+
+                {/* <Cursor></Cursor> */}
+
+
                 {/* <div style={{ height: "110vh" }}>
                     <BlogComponent></BlogComponent>
                     <Subblog1></Subblog1>
@@ -123,8 +144,8 @@ export default function page(props) {
                             </div>
 
                         </div>
-                        
-                        
+
+
                         {/* <div className='col-md-4'>
                         <div class="">
                             
@@ -146,7 +167,7 @@ export default function page(props) {
                 </div>
 
 
-                <div style={{ backgroundColor: "rgb(56, 29, 29)", paddingTop:"20px", paddingBottom:"20px" }}>
+                <div style={{ backgroundColor: "rgb(56, 29, 29)", paddingTop: "20px", paddingBottom: "20px" }}>
                     <h1 className='monatage'>Menage A Trois</h1>
                     <div className='row '>
                         <div className='col-md-4 mont'>
@@ -205,11 +226,118 @@ export default function page(props) {
                             eum nostrum quam voluptatibus quasi a quae, labore debitis. Sed itaque iure velit. Enim veritatis deleniti quos.
                         </div>
                         <div className='text-center text-dark'>
-                            <li><a href="#">Spotyfy</a></li>
-                            <li><a href="#">Amazon Music</a></li>
-                            <li><a href="#">Jio Music</a></li>
-                            <li><a href="#">Youtube Music</a></li>
-                            <li><a href="#">Apple Music</a></li>
+
+
+                            {/* <iframe style={{borderRadius:"12px"}} src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> */}
+                            <li className='m-3'><Button variant="outlined" onClick={handleClickOpen} >
+                                spotify
+                            </Button>
+                                <Dialog
+                                    open={open}
+                                    onClose={handleClose}
+                                    aria-labelledby="alert-dialog-title"
+                                    aria-describedby="alert-dialog-description"
+                                >
+                                    <DialogTitle id="alert-dialog-title">
+                                        {"Use Google's location service?"}
+                                    </DialogTitle>
+                                    <DialogContent>
+                                        <DialogContentText id="alert-dialog-description">
+                                            <iframe style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        </DialogContentText>
+                                    </DialogContent>
+                                    <DialogActions>
+                                        {/* <Button onClick={handleClose}>Disagree</Button> */}
+                                        <Button onClick={handleClose} autoFocus>
+                                            close
+                                        </Button>
+                                    </DialogActions>
+                                </Dialog></li>
+
+                            <li className='m-3'>
+                                <Button variant="outlined" onClick={handleClickOpen} >
+                                    Amazon Music
+                                </Button>
+                                <Dialog
+                                    open={open}
+                                    onClose={handleClose}
+                                    aria-labelledby="alert-dialog-title"
+                                    aria-describedby="alert-dialog-description"
+                                >
+                                    <DialogTitle id="alert-dialog-title">
+                                        {"Use Google's location service?"}
+                                    </DialogTitle>
+                                    <DialogContent>
+                                        <DialogContentText id="alert-dialog-description">
+                                            <iframe style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        </DialogContentText>
+                                    </DialogContent>
+                                    <DialogActions>
+                                        {/* <Button onClick={handleClose}>Disagree</Button> */}
+                                        <Button onClick={handleClose} autoFocus>
+                                            close
+                                        </Button>
+                                    </DialogActions>
+                                </Dialog>
+                            </li>
+
+                            <li className='m-3'>
+                                <Button variant="outlined" onClick={handleClickOpen} >
+                                jio Music
+                                </Button>
+                                <Dialog
+                                    open={open}
+                                    onClose={handleClose}
+                                    aria-labelledby="alert-dialog-title"
+                                    aria-describedby="alert-dialog-description"
+                                >
+                                    <DialogTitle id="alert-dialog-title">
+                                        {"Use Google's location service?"}
+                                    </DialogTitle>
+                                    <DialogContent>
+                                        <DialogContentText id="alert-dialog-description">
+                                            <iframe style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        </DialogContentText>
+                                    </DialogContent>
+                                    <DialogActions>
+                                        {/* <Button onClick={handleClose}>Disagree</Button> */}
+                                        <Button onClick={handleClose} autoFocus>
+                                            close
+                                        </Button>
+                                    </DialogActions>
+                                </Dialog>
+                            </li>
+
+                            <li className='m-3'>
+                                <Button variant="outlined" onClick={handleClickOpen} >
+                                apple Music
+                                </Button>
+                                <Dialog
+                                    open={open}
+                                    onClose={handleClose}
+                                    aria-labelledby="alert-dialog-title"
+                                    aria-describedby="alert-dialog-description"
+                                >
+                                    <DialogTitle id="alert-dialog-title">
+                                        {"Use Google's location service?"}
+                                    </DialogTitle>
+                                    <DialogContent>
+                                        <DialogContentText id="alert-dialog-description">
+                                            <iframe style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        </DialogContentText>
+                                    </DialogContent>
+                                    <DialogActions>
+                                        {/* <Button onClick={handleClose}>Disagree</Button> */}
+                                        <Button onClick={handleClose} autoFocus>
+                                            close
+                                        </Button>
+                                    </DialogActions>
+                                </Dialog>
+                            </li>
+
+
+
+
                         </div>
                         <div className='col-md-4'></div>
                     </div>
@@ -217,7 +345,7 @@ export default function page(props) {
 
 
 
-               
+
 
 
                 <div className='container-fluid mt-5'>

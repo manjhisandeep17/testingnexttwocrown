@@ -35,3 +35,27 @@
     background-color: #676e7d;
     cursor: url("data:image;<img src='cursor.png' style='width:100px;height:100px'></img>"),auto;
 }
+
+
+
+
+#main{
+  height: 100%;
+  width: 100%;
+  background-color: cyan !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#main h1{
+  font-size: clamp(2rem, 10vw, 3rem); 
+}
+
+.cursor{
+  height: 20px;
+  width: 20px;
+  background-color:red;
+  border-radius: 50%;
+  position: absolute;
+}
