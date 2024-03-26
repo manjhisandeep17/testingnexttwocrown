@@ -37,30 +37,33 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 
 
-const OpenChat = () => {
-  //  confirm("Do u Want to chat with us")
+const OpenChat = () => 
 
-  return (
-    <div >
-      <Dialog   >
-        <DialogTrigger>Open</DialogTrigger>
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>Are you absolutely sure?</DialogTitle>
-            <DialogDescription>
-              This action cannot be undone. This will permanently delete your account
-              and remove your data from our servers.
-            </DialogDescription>
-          </DialogHeader>
-        </DialogContent>
-      </Dialog>
 
-    </div>
-  )
+{
+//  confirm("Do u Want to chat with us")
+
+return(
+  <div >
+    <Dialog   >
+  <DialogTrigger>Open</DialogTrigger>
+  <DialogContent>
+    <DialogHeader>
+      <DialogTitle>Are you absolutely sure?</DialogTitle>
+      <DialogDescription>
+        This action cannot be undone. This will permanently delete your account
+        and remove your data from our servers.
+      </DialogDescription>
+    </DialogHeader>
+  </DialogContent>
+</Dialog>
+
+  </div>
+)
 }
+ 
 
-
-
+  
 
 
 
@@ -69,10 +72,10 @@ const OpenChat = () => {
 
 const actions = [
   {
-    icon: <FileCopyIcon onClick={OpenChat} />, name: 'Chat',
-
+    icon: <FileCopyIcon  onClick={OpenChat}/>, name: 'Chat',
+    
   },
-
+  
   { icon: <SaveIcon />, name: 'Like' },
   { icon: <PrintIcon />, name: 'Print' },
   { icon: <ShareIcon />, name: 'Share' },
@@ -138,7 +141,7 @@ export default function RootLayout({
             onClose={handleClose}
             onOpen={handleOpen}
             open={open}
-
+            
           >
             {actions.map((action) => (
               <SpeedDialAction
@@ -147,7 +150,7 @@ export default function RootLayout({
                 tooltipTitle={action.name}
                 tooltipOpen
                 url={action.url}
-
+                
 
               />
             ))}
@@ -174,7 +177,7 @@ export default function RootLayout({
           </form>
         </div> */}
 
-        {/* somthing */}
+
 
         {/* <script>
           function openForm() {
