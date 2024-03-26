@@ -39,8 +39,8 @@ const OpenChat = () =>
 
 return(
   <div >
-    <Dialog   >
-  <DialogTrigger>Open</DialogTrigger>
+  <Dialog   >
+  <DialogTrigger></DialogTrigger>
   <DialogContent>
     <DialogHeader>
       <DialogTitle>Are you absolutely sure?</DialogTitle>
