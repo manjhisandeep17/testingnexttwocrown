@@ -20,6 +20,7 @@ import Hotel3img from '../../public/box3.jpg'
 import Hotel4img from '../../public/box4.jpg'
 import location1img from '../../public/lux-img1.jpg'
 import location3img from '../../public/island-img4.jpg'
+import Mmodal from '@/Component/Mmodal'
 
 
 
@@ -27,6 +28,10 @@ export default function Home(props) {
 
 
   const mainvid = 'video/videobanner.mp4'
+
+
+
+     
 
   return (
     <main className={styles.main}>
@@ -51,10 +56,9 @@ export default function Home(props) {
       <MonageaTrois />
 
       {/* <TakeAtour /> */}
-      {/* <ChatBott></ChatBott> */}
       {/* <Footer/> */}
-
-      
+     <Mmodal></Mmodal>
+     
     </main>
   );
 }

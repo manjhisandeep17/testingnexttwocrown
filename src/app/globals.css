@@ -24,6 +24,49 @@ body{
 .css-7dv1rb-MuiButtonBase-root-MuiFab-root-MuiSpeedDial-fab{
     background-color: #43F906 !important;
 }
+.css-1s28u9o-MuiSpeedDial-actions{
+    pointer-events: all !important;
+}
+
+.modalspan .closebtn{
+    background-color: red !important;
+    z-index: 9998 !important;
+    top: 0 !important;
+    position: absolute;
+    right: 0;
+    height: 40px !important;
+    width: 45px !important;
+    text-align: center;
+    padding: 7px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+/* .borderround::before{
+    content: '';
+    position: absolute;
+    height:"72px";
+    width:"72px";
+    background: linear-gradient(#00ccff, #d500f9);
+    animation: rotate 4s linear infinite;
+    border: 5px solid #eee;
+}
+.borderround::after{
+    content: '';
+    position: absolute;
+    background: #fff;
+    inset: 5px;
+}
+@keyframes rotete {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+} */
 
 
 .topnavstyle {

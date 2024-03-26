@@ -6,80 +6,32 @@ import TopNavbar from "@/Component/TopNavbar";
 import * as React from 'react';
 import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
-import FileCopyIcon from '@mui/icons-material/FileCopyOutlined';
-import SaveIcon from '@mui/icons-material/Save';
-import PrintIcon from '@mui/icons-material/Print';
-import ShareIcon from '@mui/icons-material/Share';
-import ReviewsIcon from '@mui/icons-material/Reviews';
 import Footer from "@/Component/Footer";
-
-
-
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog"
-// import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle,  } from '@mui/material'; // Import necessary components from Material-UI
-
-const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="up" ref={ref} {...props} />;
-});
-
-
-
-const OpenChat = () => 
-
-
-{
-//  confirm("Do u Want to chat with us")
-
-return(
-  <div >
-  <Dialog   >
-  <DialogTrigger></DialogTrigger>
-  <DialogContent>
-    <DialogHeader>
-      <DialogTitle>Are you absolutely sure?</DialogTitle>
-      <DialogDescription>
-        This action cannot be undone. This will permanently delete your account
-        and remove your data from our servers.
-      </DialogDescription>
-    </DialogHeader>
-  </DialogContent>
-</Dialog>
-
-  </div>
-)
-}
- 
-
-  
-
-
-
+import CancelIcon from '@mui/icons-material/Cancel';
+import ChatImg from '@/Component/ChatImg';
+// import CategoryIcon from '@mui/icons-material/Category';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import ChatIcon from '@mui/icons-material/Chat';
+import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
+import HistoryToggleOffIcon from '@mui/icons-material/HistoryToggleOff';
 
 
 
 const actions = [
   {
-    icon: <FileCopyIcon  onClick={OpenChat}/>, name: 'Chat',
+    icon: <ChatIcon  onClick={()=>{setshowModal(true)}}
+    sx={{color:"#42c118 "}} />,
+     name: 'Chat',
     
   },
   
-  { icon: <SaveIcon />, name: 'Like' },
-  { icon: <PrintIcon />, name: 'Print' },
-  { icon: <ShareIcon />, name: 'Share' },
+  { icon: <FavoriteIcon sx={{color:"#42c118 "}} />, name: 'Favourite' },
+  { icon: <HistoryToggleOffIcon  sx={{color:"#42c118 "}} />, name: 'History' },
+  { icon: <EmojiEmotionsIcon  sx={{color:"#42c118 "}} />, name: 'Happy' },
 ];
 
 
 const inter = Inter({ subsets: ["latin"] });
-
-
-
 
 
 export default function RootLayout({
@@ -90,6 +42,30 @@ export default function RootLayout({
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+
+  // Chat
+
+  const [showModal, setshowModal] = useState(false)
+    
+  const Mymodal = (e)=>{
+    return (
+      <>
+      <span className="modalspan"  style={{top:"300px", zIndex:999, position:'relative', }}>
+        <iframe
+            src="https://www.chatbase.co/chatbot-iframe/N6Thy0g90Q6IFsu52ldS_"
+            title="Chatbot"
+            width="100%"
+            style={{height: "100%", minHeight: "450px", }}
+            frameborder="0"
+        ></iframe>
+
+        <span className=" closebtn" onClick={()=>setshowModal(false)}><CancelIcon /> </span>
+      </span>
+      </>
+    )
+  }
+
+  
 
 
 
@@ -122,66 +98,52 @@ export default function RootLayout({
 
       <body className="dark">
         <main  >
+
+          
           <TopNavbar></TopNavbar>
           {/* <Chat></Chat>  */}
           {children}
 
 
           <Footer></Footer>
+
           <SpeedDial
             ariaLabel="SpeedDial tooltip example"
             sx={{ position: 'sticky', bottom: 16, }}
-            icon={<ReviewsIcon />}
+            // icon={<CategoryIcon />}
+            icon={<ChatImg />}
             onClose={handleClose}
             onOpen={handleOpen}
             open={open}
             
           >
+            
+
             {actions.map((action) => (
               <SpeedDialAction
-                key={action.name}
-                icon={action.icon}
-                tooltipTitle={action.name}
-                tooltipOpen
-                url={action.url}
+              onClick={()=>{setshowModal(true)}}
+              key={action.name}
+              icon={action.icon}
+              tooltipTitle={action.name}
+              tooltipOpen
+              url={action.url}
+              sx={{marginLeft:"-25px", }}
                 
-
-              />
+                />
             ))}
-
+            {showModal && <Mymodal />}
 
           </SpeedDial>
+
+          
+
+
 
 
         </main>
 
 
 
-        {/* <button class="open-button" onclick="openForm()">Chat</button>
-
-        <div class="chat-popup" id="myForm">
-          <form action="/action_page.php" class="form-container">
-            <h1>Chat</h1>
-
-            <label for="msg"><b>Message</b></label>
-            <textarea placeholder="Type message.." name="msg" required></textarea>
-
-            <button type="submit" class="btn">Send</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-          </form>
-        </div> */}
-
-
-
-        {/* <script>
-          function openForm() {
-            document.getElementById("myForm").style.display = "block";
-            }
-
-          function closeForm() {
-            document.getElementById("myForm").style.display = "none";
-            }
-        </script> */}
 
         <script src="front.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossOrigin="anonymous"></script>
