@@ -3,10 +3,6 @@ import React from 'react';
 import Link from 'next/link';
 import "./blog.css"
 import Main from '@/Component/Main';
-import BlogComponent from '@/Component/BlogComponent'
-import Subblog1 from '@/Component/Subblog1'
-// import Chatbot from '@/Component/ChatBoat';
-// import Cursor from '@/Component/Cursor';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';

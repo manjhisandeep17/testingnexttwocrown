@@ -1,5 +1,4 @@
 import React from 'react'
-import Situated from './Situated'
 
 export default function Gallary() {
     return (

@@ -4,8 +4,6 @@ import Link from 'next/link';
 import Image from 'next/image'
 import SideBar from './SideBar';
 import Logo from '../../public/twocrown.png'
-import { NavLink } from 'react-router-dom';
-import ClockComponent from '@/app/clock/page';
 
 const currDate = new Date()
 

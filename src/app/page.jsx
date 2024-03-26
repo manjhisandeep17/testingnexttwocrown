@@ -1,10 +1,7 @@
 "use client"
 import styles from "./page.module.css";
-import TopNavbar from "../Component/TopNavbar";
 import Main from "@/Component/Main";
-import Banner from "../../public/bannernew.png"
 import HotelCategory from '@/Component/HotelCategory'
-import HotelCollection from '@/Component/HotelCollection'
 import HyperLinks from '@/Component/HyperLinks'
 import MovingWall from '@/Component/MovingWall'
 import Luxurious from '@/Component/Luxurious'
@@ -17,13 +14,10 @@ import LuxuryBlogs from '@/Component/LuxuryBlogs'
 import OurRooms from '@/Component/OurRooms'
 import BlogsFeeds from '@/Component/BlogsFeeds'
 import MonageaTrois from '@/Component/MonageaTrois'
-import TakeAtour from "@/Component/TakeAtour"
-// import Footer from '@/Component/Footer'
 import Hotel1img from '../../public/box1.jpg'
 import Hotel2img from '../../public/box2.jpg'
 import Hotel3img from '../../public/box3.jpg'
 import Hotel4img from '../../public/box4.jpg'
-// import ChatBott from "@/Component/ChatBoat"
 import location1img from '../../public/lux-img1.jpg'
 import location3img from '../../public/island-img4.jpg'
 

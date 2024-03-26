@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import Main from '@/Component/Main'
-// import Banner from "../../../public/hotelvideobanner.mp4"
 import Link from 'next/link'
 import About1 from '@/Component/About1'
 import TakeAtour from '@/Component/TakeAtour'
@@ -10,8 +9,6 @@ import Hotel1img from '../../../public/box1.jpg'
 import Hotel2img from '../../../public/box2.jpg'
 import Hotel3img from '../../../public/box3.jpg'
 import Hotel4img from '../../../public/box4.jpg'
-// import Footer from '@/Component/Footer'
-// import Chatbot from '@/Component/ChatBoat';
 
 export default function Page(props) {
 
