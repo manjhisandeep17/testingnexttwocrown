@@ -239,7 +239,7 @@ export default function page(props) {
                                     aria-describedby="alert-dialog-description"
                                 >
                                     <DialogTitle id="alert-dialog-title">
-                                        {"Use Google's location service?"}
+                                        {"Your Favourite List"}
                                     </DialogTitle>
                                     <DialogContent>
                                         <DialogContentText id="alert-dialog-description">
@@ -265,7 +265,7 @@ export default function page(props) {
                                     aria-describedby="alert-dialog-description"
                                 >
                                     <DialogTitle id="alert-dialog-title">
-                                        {"Use Google's location service?"}
+                                        {"Your Favourite List"}
                                     </DialogTitle>
                                     <DialogContent>
                                         <DialogContentText id="alert-dialog-description">
@@ -292,7 +292,7 @@ export default function page(props) {
                                     aria-describedby="alert-dialog-description"
                                 >
                                     <DialogTitle id="alert-dialog-title">
-                                        {"Use Google's location service?"}
+                                        {"Your Favourite List"}
                                     </DialogTitle>
                                     <DialogContent>
                                         <DialogContentText id="alert-dialog-description">
@@ -319,7 +319,7 @@ export default function page(props) {
                                     aria-describedby="alert-dialog-description"
                                 >
                                     <DialogTitle id="alert-dialog-title">
-                                        {"Use Google's location service?"}
+                                        {"Your Favourite List"}
                                     </DialogTitle>
                                     <DialogContent>
                                         <DialogContentText id="alert-dialog-description">
@@ -342,9 +342,6 @@ export default function page(props) {
                         <div className='col-md-4'></div>
                     </div>
                 </div>
-
-
-
 
 
 

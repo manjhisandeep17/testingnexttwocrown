@@ -8,6 +8,7 @@ import { NavLink } from 'react-router-dom';
 import ClockComponent from '@/app/clock/page';
 
 const currDate = new Date()
+
 export default function TopNavbar() {
 
 

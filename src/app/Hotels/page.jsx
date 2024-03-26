@@ -12,7 +12,7 @@ import Discover from '@/Component/Discover';
 import Luxurious from '@/Component/Luxurious';
 import TakeAtour from '@/Component/TakeAtour';
 import Footer from '@/Component/Footer';
-import Chatbot from '@/Component/ChatBoat';
+// import Chatbot from '@/Component/ChatBoat';
 
 
 export default function Page() {
@@ -27,7 +27,7 @@ export default function Page() {
       <HotelCollection />
       <Luxurious />
       <TakeAtour />
-      <Chatbot></Chatbot>
+      {/* <Chatbot></Chatbot> */}
       <Footer />
     </div>
   )

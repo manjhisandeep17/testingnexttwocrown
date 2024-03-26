@@ -26,6 +26,9 @@ import Hotel4img from '../../public/box4.jpg'
 // import ChatBott from "@/Component/ChatBoat"
 import location1img from '../../public/lux-img1.jpg'
 import location3img from '../../public/island-img4.jpg'
+
+
+
 export default function Home(props) {
 
 
@@ -52,7 +55,6 @@ export default function Home(props) {
       <LuxuryBlogs lux="LUXURY is an ATTITUDE" />
       <BlogsFeeds lux="Blogs Feeds..."/>
       <MonageaTrois />
-
 
       {/* <TakeAtour /> */}
       {/* <ChatBott></ChatBott> */}

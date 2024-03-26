@@ -10,8 +10,8 @@ import Hotel1img from '../../../public/box1.jpg'
 import Hotel2img from '../../../public/box2.jpg'
 import Hotel3img from '../../../public/box3.jpg'
 import Hotel4img from '../../../public/box4.jpg'
-import Footer from '@/Component/Footer'
-import Chatbot from '@/Component/ChatBoat';
+// import Footer from '@/Component/Footer'
+// import Chatbot from '@/Component/ChatBoat';
 
 export default function Page(props) {
 
@@ -170,8 +170,8 @@ export default function Page(props) {
             </div>
 
             <TakeAtour />
-            <Chatbot></Chatbot>
-            <Footer />
+            {/* <Chatbot></Chatbot> */}
+            {/* <Footer /> */}
 
 
         </div>
