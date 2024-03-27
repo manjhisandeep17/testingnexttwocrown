@@ -167,7 +167,6 @@ export default function Page(props) {
             </div>
 
             <TakeAtour />
-            {/* <Chatbot></Chatbot> */}
             {/* <Footer /> */}
 
 

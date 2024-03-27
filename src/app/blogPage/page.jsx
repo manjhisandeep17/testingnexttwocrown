@@ -368,7 +368,6 @@ export default function page(props) {
 
 
             </div>
-            {/* <Chatbot></Chatbot> */}
         </>
 
     )
