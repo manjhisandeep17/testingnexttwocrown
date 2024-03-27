@@ -5,7 +5,6 @@ import Link from 'next/link'
 import About1 from '@/Component/About1'
 import Footer from '@/Component/Footer'
 import "./BookingPage.css"
-import Chatbot from '@/Component/ChatBoat';
 
 export default function page() {
 
@@ -344,7 +343,6 @@ export default function page() {
 
 
 
-    <Chatbot></Chatbot>
       <Footer />
 
     </div>
