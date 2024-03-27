@@ -50,7 +50,7 @@ export default function RootLayout({
   const Mymodal = (e)=>{
     return (
       <>
-      <span className="modalspan"  style={{top:"300px", zIndex:999, position:'relative', }}>
+      <span className="modalspan"  style={{top:"250px", zIndex:999, position:'relative', }}>
         <iframe
             src="https://www.chatbase.co/chatbot-iframe/N6Thy0g90Q6IFsu52ldS_"
             title="Chatbot"
@@ -127,7 +127,7 @@ export default function RootLayout({
               tooltipTitle={action.name}
               tooltipOpen
               url={action.url}
-              sx={{marginLeft:"-25px", }}
+              sx={{marginLeft:"-45px", }}
                 
                 />
             ))}
