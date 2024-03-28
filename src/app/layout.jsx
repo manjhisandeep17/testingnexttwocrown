@@ -17,18 +17,7 @@ import HistoryToggleOffIcon from '@mui/icons-material/HistoryToggleOff';
 
 
 
-const actions = [
-  {
-    icon: <ChatIcon  onClick={()=>{setshowModal(true)}}
-    sx={{color:"#42c118 "}} />,
-     name: 'Chat',
-    
-  },
-  
-  { icon: <FavoriteIcon sx={{color:"#42c118 "}} />, name: 'Favourite' },
-  { icon: <HistoryToggleOffIcon  sx={{color:"#42c118 "}} />, name: 'History' },
-  { icon: <EmojiEmotionsIcon  sx={{color:"#42c118 "}} />, name: 'Happy' },
-];
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -46,6 +35,18 @@ export default function RootLayout({
   // Chat
 
   const [showModal, setshowModal] = useState(false)
+  const actions = [
+  {
+    icon: <ChatIcon  onClick={()=>{setshowModal(true)}}
+    sx={{color:"#42c118 "}} />,
+    name: 'Chat',
+    
+  },
+  
+  { icon: <FavoriteIcon sx={{color:"#42c118 "}} />, name: 'Favourite' },
+  { icon: <HistoryToggleOffIcon  sx={{color:"#42c118 "}} />, name: 'History' },
+  { icon: <EmojiEmotionsIcon  sx={{color:"#42c118 "}} />, name: 'Happy' },
+];
     
   const Mymodal = (e)=>{
     return (
@@ -128,11 +129,11 @@ export default function RootLayout({
               tooltipOpen
               url={action.url}
               sx={{marginLeft:"-45px", }}
-                
-                />
-            ))}
-            {showModal && <Mymodal />}
+              
+              />
+              ))}
 
+              {showModal && <Mymodal />}
           </SpeedDial>
 
           
