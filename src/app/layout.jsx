@@ -36,17 +36,18 @@ export default function RootLayout({
 
   const [showModal, setshowModal] = useState(false)
   const actions = [
-  {
-    icon: <ChatIcon  onClick={()=>{setshowModal(true)}}
-    sx={{color:"#42c118 "}} />,
-    name: 'Chat',
+    {
+      icon: <ChatIcon  onClick={()=>{setshowModal(true)}}
+      sx={{color:"#42c118 "}} />,
+      name: 'Chat',
+      
+    },
     
-  },
+    { icon: <FavoriteIcon sx={{color:"#42c118 "}} />, name: 'Favourite' },
+    { icon: <HistoryToggleOffIcon  sx={{color:"#42c118 "}} />, name: 'History' },
+    { icon: <EmojiEmotionsIcon  sx={{color:"#42c118 "}} />, name: 'Happy' },
+  ];
   
-  { icon: <FavoriteIcon sx={{color:"#42c118 "}} />, name: 'Favourite' },
-  { icon: <HistoryToggleOffIcon  sx={{color:"#42c118 "}} />, name: 'History' },
-  { icon: <EmojiEmotionsIcon  sx={{color:"#42c118 "}} />, name: 'Happy' },
-];
     
   const Mymodal = (e)=>{
     return (

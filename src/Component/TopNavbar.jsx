@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image'
 import SideBar from './SideBar';
 import Logo from '../../public/twocrown.png'
+import {NavLink} from "react-router-dom";
 
 const currDate = new Date()
 
@@ -176,6 +177,9 @@ export default function TopNavbar() {
                                             //      aria-current="page" href={lin.href}>{lin.name}
                                             //     </NavLink> */}
 
+                                
+                                
+                                {/* <NavLink to="/blogPage" className={({isActive}) =>`${isActive?"text-orange-600": "text-gray-600"}`}>Hello</NavLink> */}
 
                                 </ul>
 
