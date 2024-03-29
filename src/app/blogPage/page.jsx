@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import "./blog.css"
 import Main from '@/Component/Main';
@@ -9,11 +9,28 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-
+import Draggable from 'react-draggable';
 
 
 export default function page(props) {
-    const [open, setOpen] = React.useState(false);
+    // const [open, setOpen] = useState(false);
+
+    // const handleClickOpen = () => {
+    //     setOpen(true);
+    // };
+
+    // const handleClose = () => {
+    //     setOpen(false);
+    // };
+
+    // const Minimize = () => {
+    //     console.log(Dialog)
+    //     setOpen((Dialog.length(width = "500")))
+    // }
+
+
+    const [open, setOpen] = useState(false);
+    const [minimized, setMinimized] = useState(false); // State to track if dialog is minimized
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -21,7 +38,14 @@ export default function page(props) {
 
     const handleClose = () => {
         setOpen(false);
+        setMinimized(false); // Reset minimized state when dialog is closed
     };
+
+    const Minimize = () => {
+        setMinimized(true); // Set minimized state to true when Minimize button is clicked
+    };
+
+
 
 
 
@@ -215,8 +239,9 @@ export default function page(props) {
 
                 <div className='container-fluid'>
                     <div className='row p-3 m-1 border border-secondary mb-5 mt-2 rounded-2  '>
+                        <h1 className='monatage'>My Favourite Music PlayList</h1>
                         <div className='col-md-4'></div>
-                        <div className='col-md-4 text-center p-2'>
+                        <div className='col-md-4 text-center p-2 mt-5'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum labore, doloribus laudantium iste a, corporis itaque
                             tempore voluptatem recusandae assumenda nobis distinctio sed omnis. Alias, neque ipsum minus sit adipisci exercitationem saepe aperiam
                             eum nostrum quam voluptatibus quasi a quae, labore debitis. Sed itaque iure velit. Enim veritatis deleniti quos.
@@ -224,10 +249,42 @@ export default function page(props) {
                         <div className='text-center text-dark'>
 
 
+
                             {/* <iframe style={{borderRadius:"12px"}} src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> */}
-                            <li className='m-3'><Button variant="outlined" onClick={handleClickOpen} >
-                                spotify
-                            </Button>
+                            <li className='m-3'>
+                                <Button variant="outlined" onClick={handleClickOpen}>
+                                    Spotify
+                                </Button>
+                                <Dialog
+                                    open={open}
+                                    onClose={handleClose}
+                                    aria-labelledby="alert-dialog-title"
+                                    aria-describedby="alert-dialog-description"
+                                    style={{ display: minimized ? 'none' : 'block' }} // Conditionally set display style based on minimized state
+                                >
+                                    <DialogTitle id="alert-dialog-title">
+                                        {"Use Google's location service?"}
+                                    </DialogTitle>
+                                    <DialogContent>
+                                        <DialogContentText id="alert-dialog-description">
+                                            <iframe style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        </DialogContentText>
+                                    </DialogContent>
+                                    <DialogActions>
+                                        <Button onClick={handleClose}>Close</Button>
+                                        <Button onClick={Minimize} autoFocus>
+                                            Minimize
+                                        </Button>
+                                    </DialogActions>
+                                </Dialog>
+                            </li>
+
+
+
+                            {/* <li className='m-3'>
+                                <Button variant="outlined" onClick={handleClickOpen} >
+                                    Amazon Music
+                                </Button>
                                 <Dialog
                                     open={open}
                                     onClose={handleClose}
@@ -239,18 +296,21 @@ export default function page(props) {
                                     </DialogTitle>
                                     <DialogContent>
                                         <DialogContentText id="alert-dialog-description">
-                                            <iframe style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                            <iframe style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="none" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                                         </DialogContentText>
                                     </DialogContent>
                                     <DialogActions>
-                                        {/* <Button onClick={handleClose}>Disagree</Button> */}
-                                        <Button onClick={handleClose} autoFocus>
-                                            close
+                                        <Button onClick={handleClose}>Close</Button>
+                                        <Button onClick={Minimize} autoFocus>
+                                            Min
                                         </Button>
                                     </DialogActions>
-                                </Dialog></li>
+                                </Dialog>
+                            </li> */}
 
-                            <li className='m-3'>
+
+
+                            {/* <li className='m-3'>
                                 <Button variant="outlined" onClick={handleClickOpen} >
                                     Amazon Music
                                 </Button>
@@ -269,9 +329,9 @@ export default function page(props) {
                                         </DialogContentText>
                                     </DialogContent>
                                     <DialogActions>
-                                        {/* <Button onClick={handleClose}>Disagree</Button> */}
-                                        <Button onClick={handleClose} autoFocus>
-                                            close
+                                        <Button onClick={handleClose}>Close</Button>
+                                        <Button onClick={Minimize} autoFocus>
+                                            Min
                                         </Button>
                                     </DialogActions>
                                 </Dialog>
@@ -279,7 +339,7 @@ export default function page(props) {
 
                             <li className='m-3'>
                                 <Button variant="outlined" onClick={handleClickOpen} >
-                                jio Music
+                                    jio Music
                                 </Button>
                                 <Dialog
                                     open={open}
@@ -296,9 +356,9 @@ export default function page(props) {
                                         </DialogContentText>
                                     </DialogContent>
                                     <DialogActions>
-                                        {/* <Button onClick={handleClose}>Disagree</Button> */}
-                                        <Button onClick={handleClose} autoFocus>
-                                            close
+                                        <Button onClick={handleClose}>Close</Button>
+                                        <Button onClick={Minimize} autoFocus>
+                                            Min
                                         </Button>
                                     </DialogActions>
                                 </Dialog>
@@ -306,7 +366,7 @@ export default function page(props) {
 
                             <li className='m-3'>
                                 <Button variant="outlined" onClick={handleClickOpen} >
-                                apple Music
+                                    apple Music
                                 </Button>
                                 <Dialog
                                     open={open}
@@ -323,13 +383,13 @@ export default function page(props) {
                                         </DialogContentText>
                                     </DialogContent>
                                     <DialogActions>
-                                        {/* <Button onClick={handleClose}>Disagree</Button> */}
-                                        <Button onClick={handleClose} autoFocus>
-                                            close
+                                        <Button onClick={handleClose}>Close</Button>
+                                        <Button onClick={Minimize} autoFocus>
+                                            Min
                                         </Button>
                                     </DialogActions>
                                 </Dialog>
-                            </li>
+                            </li>  */}
 
 
 
