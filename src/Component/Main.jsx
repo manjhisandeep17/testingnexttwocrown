@@ -1,12 +1,36 @@
 "use client"
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 
-export default function Main(props) {
+
+export default function Main(props, params) {
+
+    // const [data, setData] = useState([])
+    // function Search () {
+    // const [filterData, setfilterData] = useState([])
+
+    // const handleFilter = (value) => {
+
+    //     const res = filterData.filter( f => f.name.lowerCase().includes(value))
+    //     setData(res);
+
+    // }
+    // useEffect(() => {
+    //     fetch("https://jsonplaceholder.typicode.com/users")
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             console.log(data)
+    //             setData(data);
+    //             setfilterData(filterData);
+    //         })
+    //         .catch(err => console.log(err))
+    // }, [])
+    // }
+
 
 
     return (
-        <div style={{position:"relative"}}>
+        <div style={{ position: "relative" }}>
 
             <div className='container-fluid pic  '>
                 <div className='row'>
@@ -17,7 +41,7 @@ export default function Main(props) {
                                 <div className="imgban w-100" >
                                     <div>
                                         {/* <Image src={props.bannerimg} alt="Picture of the author" className="d-block w-100 "  /> */}
-                                        <video loop autoPlay muted height="50%" width="100%"> <source src={props.Video} type="video/mp4"   /> </video>
+                                        <video loop autoPlay muted height="50%" width="100%"> <source src={props.Video} type="video/mp4" /> </video>
                                     </div>
 
 
@@ -39,10 +63,25 @@ export default function Main(props) {
                                                     <div className="collapse navbar-collapse" id="navbarScroll">
                                                         <div className='row'>
                                                             <div className='col-md-3'>
-                                                                <form className="d-flex" role="search">
-                                                                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                                                                </form>
+
+                                                                {/* <div className="d-flex" role="search">
+                                                                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" onClick={Search(e => handleFilter(e.target.value))} />
+                                                                </div>
+                                                                <div className='search-result'>
+                                                                    {data.map((d, i) => (
+                                                                        <div key={i}>
+                                                                            {d.name}
+                                                                        </div>
+                                                                    ))}
+                                                                </div> */}
+
+                                                            <div className="d-flex" role="search">
+                                                                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"  />
+                                                                </div>
+                                                                
                                                             </div>
+
+
                                                             <div className='col-md-3'>
                                                                 <input className='form-control' type="date" id="date" name="date" />
                                                             </div>

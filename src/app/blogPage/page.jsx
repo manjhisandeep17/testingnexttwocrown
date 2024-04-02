@@ -9,8 +9,21 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import Paper, { PaperProps } from '@mui/material/Paper';
 import Draggable from 'react-draggable';
 
+
+
+function PaperComponent(props) {
+    return (
+        <Draggable
+            handle="#draggable-dialog-title"
+            cancel={'[class*="MuiDialogContent-root"]'}
+        >
+            <Paper {...props} />
+        </Draggable>
+    );
+}
 
 export default function page(props) {
     // const [open, setOpen] = useState(false);
@@ -29,8 +42,9 @@ export default function page(props) {
     // }
 
 
-    const [open, setOpen] = useState(false);
-    const [minimized, setMinimized] = useState(false); // State to track if dialog is minimized
+    // const [open, setOpen] = useState(false);
+
+    const [open, setOpen] = React.useState(false);
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -38,13 +52,18 @@ export default function page(props) {
 
     const handleClose = () => {
         setOpen(false);
-        setMinimized(false); // Reset minimized state when dialog is closed
     };
 
-    const Minimize = () => {
-        setMinimized(true); // Set minimized state to true when Minimize button is clicked
-    };
-
+    function PaperComponent(props) {
+        return (
+            <Draggable
+                handle="#draggable-dialog-title"
+                cancel={'[class*="MuiDialogContent-root"]'}
+            >
+                <Paper {...props} />
+            </Draggable>
+        );
+    }
 
 
 
@@ -251,30 +270,55 @@ export default function page(props) {
 
 
                             {/* <iframe style={{borderRadius:"12px"}} src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> */}
-                            <li className='m-3'>
+                            <li className='m-3 '>
                                 <Button variant="outlined" onClick={handleClickOpen}>
                                     Spotify
                                 </Button>
                                 <Dialog
                                     open={open}
                                     onClose={handleClose}
-                                    aria-labelledby="alert-dialog-title"
-                                    aria-describedby="alert-dialog-description"
-                                    style={{ display: minimized ? 'none' : 'block' }} // Conditionally set display style based on minimized state
+                                    PaperComponent={PaperComponent}
+                                    aria-labelledby="draggable-dialog-title"
                                 >
-                                    <DialogTitle id="alert-dialog-title">
-                                        {"Use Google's location service?"}
+                                    <DialogTitle style={{ cursor: 'move' }} id="draggable-dialog-title">
+                                        Music Playlist
                                     </DialogTitle>
                                     <DialogContent>
                                         <DialogContentText id="alert-dialog-description">
-                                            <iframe style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                                <iframe style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="none" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                                         </DialogContentText>
                                     </DialogContent>
                                     <DialogActions>
-                                        <Button onClick={handleClose}>Close</Button>
-                                        <Button onClick={Minimize} autoFocus>
-                                            Minimize
+                                        <Button autoFocus onClick={handleClose}>
+                                            Close
                                         </Button>
+                                        <Button onClick={handleClose}>Min</Button>
+                                    </DialogActions>
+                                </Dialog>
+                            </li>
+                            <li className='m-3 '>
+                                <Button variant="outlined" onClick={handleClickOpen}>
+                                    Jio
+                                </Button>
+                                <Dialog
+                                    open={open}
+                                    onClose={handleClose}
+                                    PaperComponent={PaperComponent}
+                                    aria-labelledby="draggable-dialog-title"
+                                >
+                                    <DialogTitle style={{ cursor: 'move' }} id="draggable-dialog-title">
+                                        Music Playlist
+                                    </DialogTitle>
+                                    <DialogContent>
+                                        <DialogContentText id="alert-dialog-description">
+                                                <iframe style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="none" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        </DialogContentText>
+                                    </DialogContent>
+                                    <DialogActions>
+                                        <Button autoFocus onClick={handleClose}>
+                                            Close
+                                        </Button>
+                                        <Button onClick={handleClose}>Min</Button>
                                     </DialogActions>
                                 </Dialog>
                             </li>
