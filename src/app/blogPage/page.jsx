@@ -40,9 +40,8 @@ export default function page(props) {
     //     console.log(Dialog)
     //     setOpen((Dialog.length(width = "500")))
     // }
-
-
     // const [open, setOpen] = useState(false);
+
 
     const [open, setOpen] = React.useState(false);
 
@@ -69,6 +68,7 @@ export default function page(props) {
 
 
     const blogvid = "video/BlogVideo.mp4"
+    
     return (
         <>
 
@@ -285,7 +285,7 @@ export default function page(props) {
                                     </DialogTitle>
                                     <DialogContent>
                                         <DialogContentText id="alert-dialog-description">
-                                                <iframe style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="none" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                                <iframe style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="none" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture " loading="lazy"></iframe>
                                         </DialogContentText>
                                     </DialogContent>
                                     <DialogActions>

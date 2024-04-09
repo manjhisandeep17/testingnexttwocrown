@@ -121,9 +121,9 @@ export default function TopNavbar() {
                     <Image src={Logo} style={{ width: "200px", height: "70px", padding: "10px" }} alt='jsdbvd' />
                 </h1>
 
-                <div className='d-flex justify-content-around align-items-center  '>
+                <div className='navmdscreen  '>
                     <SideBar />
-                    <div className='  navbar navbar-expand-lg  mx-5 topnavstyle'>
+                    <div className='  navbar navbar-expand-lg  topnavstyle'>
                         <div className="container-fluid " >
                             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                                 <span className="navbar-toggler-icon"></span>
